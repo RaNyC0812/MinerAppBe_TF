@@ -10,6 +10,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Repository
+// kathy
 public interface MineralRepository extends JpaRepository<Mineral, Integer> {
     @Query("SELECT m FROM Mineral m WHERE m.name LIKE %:nombre%")
     List<Mineral> findByNombre(@Param("nombre") String nombre);
