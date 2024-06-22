@@ -9,6 +9,7 @@ import upc.edu.pe.trabajofinal.model.Mineral_type;
 import java.time.LocalDate;
 import java.util.List;
 
+//mineral repository module
 @Repository
 public interface MineralRepository extends JpaRepository<Mineral, Integer> {
     @Query("SELECT m FROM Mineral m WHERE m.name LIKE %:nombre%")

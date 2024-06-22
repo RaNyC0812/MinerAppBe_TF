@@ -8,6 +8,7 @@ import upc.edu.pe.trabajofinal.model.Mineral_type;
 
 import java.util.List;
 
+//type mineral repository module
 @Repository
 public interface Mineral_typeRepository extends JpaRepository<Mineral_type,Integer> {
     @Query("SELECT mt FROM Mineral_type mt WHERE mt.type LIKE %:tipoMineral%")
