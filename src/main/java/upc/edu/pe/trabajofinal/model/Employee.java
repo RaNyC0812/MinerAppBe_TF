@@ -46,6 +46,10 @@ public class Employee {
     @Column( name = "emergency_contact", nullable = false, length = 100)
     private String emergency_contact;
 
+    @Column( name = "gil", nullable = false, length = 100)
+    private String gil;
+    
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "mine_id")
     private Mine mine;
