@@ -9,6 +9,7 @@ import upc.edu.pe.trabajofinal.repository.Machinery_typeRepository;
 
 import java.util.List;
 
+//machinery service module insert list delete listID
 @Service
 public class Machinery_typeService {
     @Autowired
