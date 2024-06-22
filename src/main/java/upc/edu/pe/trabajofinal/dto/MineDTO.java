@@ -1,6 +1,7 @@
 package upc.edu.pe.trabajofinal.dto;
 
 public class MineDTO {
+    //Implementación del DTO de Minas
     private Integer id_mine;
     private String name;
     private String location;
