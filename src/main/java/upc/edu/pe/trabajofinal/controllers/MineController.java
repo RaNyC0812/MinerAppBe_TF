@@ -17,7 +17,7 @@ public class MineController {
     @Autowired
     private MineService dS;
 
-
+    //Implementación registro de Minas
     @PostMapping("/registrar") // ingresar datos
     @PreAuthorize("hasAnyAuthority('JEFE')")
     public void registrar(@RequestBody MineDTO mine){
