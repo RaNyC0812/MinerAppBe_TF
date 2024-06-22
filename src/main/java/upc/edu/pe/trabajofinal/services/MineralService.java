@@ -11,6 +11,7 @@ import upc.edu.pe.trabajofinal.repository.MineralRepository;
 import java.time.LocalDate;
 import java.util.List;
 
+//Mineral service insert list delete
 @Service
 public class MineralService {
     @Autowired

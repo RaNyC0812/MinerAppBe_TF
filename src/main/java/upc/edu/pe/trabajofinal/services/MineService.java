@@ -7,6 +7,7 @@ import upc.edu.pe.trabajofinal.repository.MineRepository;
 
 import java.util.List;
 
+//Services miner
 @Service
 public class MineService {
     @Autowired
