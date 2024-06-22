@@ -14,6 +14,8 @@ public class Mine {
     private String name;
     private String location;
 
+    private String year;
+
     public Mine(Integer id_mine, String name, String location) {
         this.id_mine = id_mine;
         this.name =name; //Nombre de la sede ser el name
