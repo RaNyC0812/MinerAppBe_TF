@@ -20,6 +20,7 @@ public class Employee_typeController {
 
 
     @PostMapping("/registrar") // ingresar datos
+    //Spring Security employee module
     @PreAuthorize("hasAnyAuthority('JEFE')")
     public void registrar(@RequestBody Employee_typeDTO employeeTypeDTO){
         ModelMapper m = new ModelMapper();
