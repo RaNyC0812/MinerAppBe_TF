@@ -23,8 +23,8 @@ public class MineralController {
     private MineralService dS;
 
 
-    @PostMapping("/registrar") // ingresar datos
-    @PreAuthorize("hasAnyAuthority('EMPLEADO')")
+    @PostMapping("/registrar") // ingresar/registrar datos
+    @PreAuthorize("hasAnyAuthority('EMPLEADO')") //Authorizer access a register
     public void registrar(@RequestBody MineralDTO mineralDTO){
         ModelMapper m = new ModelMapper();
         Mineral ds = m.map(mineralDTO, Mineral.class);
