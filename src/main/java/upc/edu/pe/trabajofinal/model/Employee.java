@@ -48,7 +48,11 @@ public class Employee {
 
     @Column( name = "gil", nullable = false, length = 100)
     private String gil;
-    
+
+    @Column( name = "employe", nullable = false, length = 100)
+    private String employe;
+
+
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "mine_id")
