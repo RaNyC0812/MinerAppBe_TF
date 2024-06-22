@@ -51,6 +51,7 @@ public class EmployeeController {
 
     }
 
+    //modify employee module
     @PutMapping("/modificar")
     //@PreAuthorize("hasAuthority('ADMIN')")
     public void modificar(@RequestBody EmployeeDTO answerDTO){
