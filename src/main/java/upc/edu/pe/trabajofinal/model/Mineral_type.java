@@ -15,6 +15,7 @@ public class Mineral_type {
     private String type;
     private String general_propertie;
 
+    private String year; 
     @OneToOne
     @JoinColumn(name = "mineral_id")
     private Mineral mineral;
