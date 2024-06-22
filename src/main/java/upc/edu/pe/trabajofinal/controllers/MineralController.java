@@ -80,7 +80,7 @@ public class MineralController {
 
         return dS.countMineralsExtractedByDateRange(startDate, endDate);
     }
-
+    //solicitud HTTP GET recuperar lista de recursos
     @GetMapping("/InfoMineralxRangoFecha")
     public List<Mineral> getMineralsExtractedByDateRange(
             @RequestParam("startDate") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate startDate,
