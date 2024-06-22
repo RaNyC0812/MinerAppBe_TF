@@ -16,6 +16,7 @@ public class Machinery_type {
     private String machinery_type_name;
     private String description;
     private String general_uses;
+    private String year_fabrication;
     @OneToOne
     @JoinColumn(name = "machinary_type")
     private Machinery machinery;

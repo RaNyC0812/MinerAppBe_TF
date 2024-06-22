@@ -19,6 +19,8 @@ public class Machinery {
     private LocalDate purchase_date;
     private String operational_stat;
 
+    private String añodefabricaion;
+
     private String cabeza;
 
     @OneToOne(fetch = FetchType.LAZY)
