@@ -22,8 +22,9 @@ public class MineralController {
     @Autowired
     private MineralService dS;
 
-
+    //Manejador de una solicitud HTTP POST
     @PostMapping("/registrar") // ingresar/registrar datos
+    //Spring Security
     @PreAuthorize("hasAnyAuthority('EMPLEADO')") //Authorizer access a register
     public void registrar(@RequestBody MineralDTO mineralDTO){
         ModelMapper m = new ModelMapper();
