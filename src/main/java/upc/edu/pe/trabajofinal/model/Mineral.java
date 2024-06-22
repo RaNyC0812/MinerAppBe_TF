@@ -21,6 +21,7 @@ public class Mineral {
     private BigDecimal specific_gravity;
     private String crystal_system;
     private LocalDate fecha_extraccion;
+    private String year;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "mine_id")
